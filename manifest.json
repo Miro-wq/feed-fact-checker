@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "FeedFact-Facebook-POC",
+  "version": "0.1",
+  "description": "POC: marchează postările Facebook cu verdict dummy.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "://.facebook.com/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "://.facebook.com/"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
