@@ -1,7 +1,15 @@
-.feedfact-badge {
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.8);
+.ff-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 6px;
+  font-size: 14px;
   border-radius: 4px;
-  padding: 2px 4px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
   z-index: 9999;
+  pointer-events: none;
 }
+.ff-ok   { border: 1px solid #4caf50; }
+.ff-maybe{ border: 1px solid #ff9800; }
+.ff-fake { border: 1px solid #f44336; }
